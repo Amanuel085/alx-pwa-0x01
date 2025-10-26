@@ -1,4 +1,4 @@
-import Button from "@/components/commons/Button";
+import Button from "../components/layout/Button"; // ✅ if using relative path
 import { useRouter } from "next/router";
 
 const Home: React.FC = () => {

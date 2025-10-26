@@ -1,6 +1,7 @@
-import { ButtonProps } from "@interfaces/index";
+import React from "react";
+import { ButtonProps } from "@interfaces";
 
-const Button: React.FC<ButtonProps> = ({ title, action }) => {
+function Button({ title, action }: ButtonProps) {
   return (
     <button
       onClick={action}
@@ -9,6 +10,6 @@ const Button: React.FC<ButtonProps> = ({ title, action }) => {
       {title}
     </button>
   );
-};
+}
 
 export default Button;
